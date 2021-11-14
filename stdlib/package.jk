@@ -1,0 +1,17 @@
+type Package(name: string, version: string);
+
+func package(name: string) -> Package {
+    Package { name = name, version = "" }
+}
+
+func version(pack: Package, version: string) -> Package {
+    other_name = pack.name;
+
+    Package { name = other_name, version = version }
+}
+
+func check(pack: Package) {
+    // assert(!pack.version.is_empty())
+    // assert(!pack.version.is_valid_semver())
+    // assert(!pack.name.is_empty())
+}
